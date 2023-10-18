@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<style>
+	body{
+		background-image: url('images/dm.jpg');
+		background-repeat: repeat-x;
+		background-size: cover;
+	}
+	* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+    url("../images/taj.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+  /*background: red;*/
+}
+
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav .menu a:first-child {
+  color: #00b894;
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+section .btnone {
+  /*background: #00b894;*/
+  background: #fff;
+  color: #000;
+}
+
+.btnone:hover {
+  background: #00b894;
+  color: white;
+}
+
+section .btntwo {
+  background: #00b894;
+  color: white;
+}
+
+.btntwo:hover {
+  background: #fff;
+  color: #000;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Java Course";
+  }
+  20% {
+    content: "Python Course";
+  }
+  35% {
+    content: "Testing Course";
+  }
+  60% {
+    content: "Javascript Course";
+  }
+  80% {
+    content: "ReactJS Course";
+  }
+  100% {
+    content: "MySQL Course";
+  }
+}
+
+section.contact-about {
+        padding: 80px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+    }
+
+    section.contact-about h2 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    section.contact-about p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+   
+   /* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background-image: url("images/dm.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  color: #00b894;
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+#about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: red;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+/* Create a responsive, centered, three-column grid. */
+.card-container {
+	align-items: start;
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fit, 300px);
+	justify-content: center;
+	}
+</style>
+<body>
+
+<header>
+	
+<nav>
+	<div class="logo"> <h1 style="font-size: 20px;"> Le<span><b>A</b></span>rn In<span><b>S</b></span>pire </h1> </div>
+	<div class="menu">
+		<a href="#">Home</a>
+		<a href="#about">about</a>
+		<a href="#contact">feedback</a>
+		<a href="#contact">contact</a>
+	</div>
+</nav>
+
+	<main>
+		<section>
+			<h3>Welcome To Learn Inspire</h3>
+			<h1>DO COME & JOIN <span class="change_content"> </span> <span style="margin-top: -10px;"></span> </h1>
+			<p>"Knowledge itself is power."</p>
+			<a href="/register" class="btnone">Register</a>
+			<a href="/login" class="btntwo">Login</a>
+		</section>
+	</main>
+	<section class="about-us">
+    <div id="about">
+      <!--<img src="girl.png" class="pic">-->
+      <div class="text">
+        <h2>About Us</h2>
+        <h5>Full Stack  <span>Developer</span></h5>
+         <i> <p style="color: ghostwhite; font-family:'Times New Roman', Times, serif">MCA in Post-Graduation, Good Knowledge of Html5, CSS, JavaScript ,Oracle ,Java, Spring, Hibernate, JDBC ,Python, Manual Testing & MySQL.</p></i>
+        <div class="data">
+        <a href="#" class="hire">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <center> 
+		<div id="contact">
+		 <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+         <i class="fas fa-map-marker-alt"></i>
+          <i><div class="topic">Address</div>
+          <div class="text-one">BTM Layout</div>
+          <div class="text-two">Bengaluru, Karnataka-560029</div></i> 
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <i><div class="topic">Phone</div>
+          <div class="text-one">+91 9636131516</div>
+          <div class="text-two">+91 9024819979</div></i>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <i><div class="topic">Email</div>
+          <div class="text-one">kapilsahu014@gmail.com</div>
+          <div class="text-two">sahukapil091@gmail.com</div></i>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div><br>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          <input type="text" placeholder="Enter your message">
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  </div>
+  </center>
+
+
+</header>
+
+</body>
+</html>
